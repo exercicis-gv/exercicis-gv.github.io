@@ -4,9 +4,9 @@ body {
 li {
 	list-style-type: none;
 	font-size: 3vw;
-	color: white;
+	color: black;
 }
 li:hover {
 	font-weight: bold;
-	font-size: 4vw;
+	text-decoration-line: underline;
 }
