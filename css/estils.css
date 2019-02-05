@@ -1,9 +1,12 @@
 body {
 	background-color: lightblue;
 }
+h1 {
+	font-size: 6vw;
+}
 li {
 	list-style-type: none;
-	font-size: 3vw;
+	font-size: 2vw;
 	color: black;
 }
 li:hover {
