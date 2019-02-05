@@ -1,0 +1,11 @@
+<!ELEMENT lliga (jornada+)>
+<!ELEMENT jornada (partit+)>
+<!ELEMENT partit (dia, equip?)>
+<!ELEMENT dia (#PCDATA)>
+<!ELEMENT equip (nom,resultat,gols)>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT resultat (#PCDATA)>
+<!ELEMENT gols ANY>
+<!ELEMENT jugador (#PCDATA)>
+<!ATTLIST document versio CDATA #FIXED "1.0">
+<!ATTLIST document codificacio NMTOKEN #DEFAULT "UTF − 8">

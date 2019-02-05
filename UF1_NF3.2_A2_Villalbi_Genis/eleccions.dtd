@@ -1,0 +1,13 @@
+<!ELEMENT eleccions (descripcio,dades,resultats)>
+<!ELEMENT descripcio (#PCDATA)>
+<!ELEMENT dades (data,cens,abstencio,blancs)>
+<!ELEMENT data (#PCDATA)>
+<!ELEMENT cens (#PCDATA)>
+<!ELEMENT abstencio (#PCDATA)>
+<!ELEMENT blancs (#PCDATA)>
+<!ELEMENT resultats (partit+)>
+<!ELEMENT partit (nom,vots)>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT vots (#PCDATA)>
+<!ATTLIST document versio CDATA #FIXED "1.0">
+<!ATTLIST document codificacio NMTOKEN #DEFAULT "UTF − 8">

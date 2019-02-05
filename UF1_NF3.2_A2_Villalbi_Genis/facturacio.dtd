@@ -1,0 +1,24 @@
+<!ELEMENT facturacio (empresa,factura+)>
+<!ELEMENT empresa (raosocial)>
+<!ELEMENT raosocial (nom,cognom?,adreca,codipostal,poblacio,NIF|DNI)>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT adeca (#PCDATA)>
+<!ELEMENT codipostal (#PCDATA)>
+<!ELEMENT poblacio (#PCDATA)>
+<!ELEMENT NIF (#PCDATA)>
+<!ELEMENT DNI (#PCDATA)>
+<!ELEMENT factura (client,rebut+,data,subtotal,iva,total)>
+<!ELEMENT client (raosocial)>
+<!ELEMENT rebut (data,totalrebut,linies)>
+<!ELEMENT data (#PCDATA)>
+<!ELEMENT totalrebut (#PCDATA)>
+<!ELEMENT linies (producte+)>
+<!ELEMENT producte (descripcio,quantitat,preuunitari)>
+<!ELEMENT descripcio (#PCDATA)>
+<!ELEMENT quantitat (#PCDATA)>
+<!ELEMENT preuunitari (#PCDATA)>
+<!ELEMENT subtotal (#PCDATA)>
+<!ELEMENT iva (#PCDATA)>
+<!ELEMENT total (#PCDATA)>
+<!ATTLIST document versio CDATA #FIXED "1.0">
+<!ATTLIST document codificacio NMTOKEN #DEFAULT "UTF − 8">
